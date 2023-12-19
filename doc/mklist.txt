@@ -1,0 +1,104 @@
+BRC-420 | btc铭文市场：
+http://brc420.io
+
+inBRC | btc铭文市场：
+http://inbrc.org
+
+BTC Stamps SRC20 | btc链铭文：
+http://stampscan.xyz
+
+iDclub | btc铭文市场
+http://idclub.io
+
+Atomical Market | btc链(Atom)铭文市场：
+http://atomicalmarket.com
+
+
+
+SatsX | btc链(Atom+PIPE)铭文市场
+http://satsx.io
+
+Rune explorer | btc链 rune协议(COOK)符文市场：
+http://runealpha.xyz
+
+NostrAssets | btc链闪电网络:
+http://mainnet.nostrassets.com
+
+EtchMarket | eth铭文市场：
+http://etch.market
+
+
+SatsX | btc链(Atom+PIPE)铭文市场
+http://satsx.io
+
+Rune explorer | btc链 rune协议(COOK)符文市场：
+http://runealpha.xyz
+
+NostrAssets | btc链闪电网络:
+http://mainnet.nostrassets.com
+
+EtchMarket | eth铭文市场：
+http://etch.market
+
+
+Base-inscription | base链铭文市场：
+http://base20.live
+
+http://Evm.ink | bsc的铭文市场
+http://evm.ink
+
+BscsMarket | bsc链铭文市场：
+http://bscs.market
+
+PolsMarket | polygon链铭文市场：
+http://fe-pols-market.vercel.app
+
+
+Avascriptions | 雪崩avax铭文市场：
+http://avascriptions.com
+
+TRXI Market | trx铭文市场：
+http://trximarkets.com
+
+Magic Eden | sol铭文市场：
+http://magiceden.io
+
+http://Frc20.io | Fantom 铭文市场
+http://frc20.io
+
+
+
+http://dogex.me | 狗狗铭文市场：
+http://dogex.me
+
+BlueMove | Aptos铭文市场：
+http://bluemove.net
+
+Tonano | ton铭文市场：
+http://tonano.io
+
+XRC | okts铭文市场：
+http://xrc.ink
+
+
+X-GON | okt铭文市场：
+http://x-gon.com
+
+Fair20 Pad | arb铭文市场：
+http://fair20.io
+
+以上铭文均为个人角度收集，没有按照不同协议打标签，那样我自己都会看的眼花撩乱，以不同公链为记忆点打的标签，方便记忆，不绝对准确，不绝对完整，欢迎补充纠错。🫡🫡
+
+
+
+zksmarket｜zksync铭文交易市场：
+http://zksmarket.ink
+
+Unielon | 狗狗铭文市场：
+http://unielon.com
+
+Arscription | arb链铭文市场：
+http://arscription.com
+
+COSS ｜ Cosmos铭文市场：
+http://coss.ink

@@ -1,0 +1,205 @@
+#root {
+  display: block;
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+._topbar {
+  height: 60px;
+  background-color: #e2eaf1;
+
+}
+/* E1E13E
+B1B664
+29448E
+0690D4
+FDE500
+F20004 */
+.top_box {
+  display: flex;
+ 
+ 
+
+}
+.center_box{
+  flex-grow: 1;
+}
+.left_logo_box {
+  writing-mode: vertical-rl;
+  background-color: black;
+  color: #E1E13E;
+  font-size: 4vw;
+  font-weight: 700;
+  padding: 25px 30px;
+  margin-right: 6px;
+}
+@keyframes background-color-change1 {
+  0%, 100% {
+    background-color: #f00; /* 红色 */
+  }
+  50% {
+    background-color: #0690D4; /* 蓝色 */
+  }
+} 
+.slogan1 {
+  animation: background-color-change1 0.8s infinite;
+  background-color: #0690D4;
+  color: #FDE500;
+  font-size: 4vw;
+  padding: 1vh 0;
+  margin-bottom: 6px;
+}
+@keyframes background-color-change {
+  0%, 100% {
+    background-color: #000; /* 红色 */
+  }
+  50% {
+    background-color: #0000ff; /* 蓝色 */
+  }
+}
+.slogan2 {
+  animation: background-color-change 1s infinite;
+  background-color: black;
+  color: white;
+  font-size:  4vw;
+  font-weight: 300;
+  margin-bottom: 6px;
+}
+.hot_insc_box{
+  min-height: 170px;
+  display: flex;
+}
+.hot_insc_box_left{
+  background-color: red;
+  color: #fff;
+  width: 8vw;
+  font-weight: 800;
+  place-items: center;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  font-size:  3vw;
+}
+.hot_insc_box_center{
+  flex-grow: 1;
+  background-color: #FDE500;
+}
+.hot_insc_box_center div{
+  display: flex;
+  justify-content:space-evenly;
+  line-height: 40px; 
+  margin-top: 10px;
+  margin-bottom: 3px;
+  height: 40px;
+  font-size: 2vw;
+  font-weight: 500;
+}
+.holders{
+  background-color: #0690D4;
+  padding: 0px 15px 0px;
+  color: #fff;
+  font-weight: 300;
+}
+
+.market_list_box{
+  background-color: #0690D4;
+}
+.market_list_tname{
+  
+  text-align: left;
+  font-size: 2vw;
+  background-color: red;
+  color: white;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  padding-left: 10px;
+
+}
+.market_list{
+    display: flex;
+    flex-wrap:wrap;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+.list-item {
+
+  color: #000;
+  flex: 0 0 25%; 
+  max-width: 25%;  
+  text-align: center;
+  padding: 5px;
+  box-sizing: border-box; 
+ 
+}
+.list-item-box{
+  background-color: #FDE500;
+}
+a {
+  display: inline-block; 
+  line-height: 150px; 
+  height: 150px;
+  font-size: 5vw;
+  text-align: center;
+  color: #000;  
+  text-decoration: none;
+  background-color: transparent;
+}
+a:visited {
+  color: #000;  
+}
+a:hover {
+  color: #000; 
+}
+a:active {
+  color: #000; 
+}
+
+
+.footer {
+  height: 160px;
+  text-align: right;
+  font-size: 80px;
+  padding-right: 30px;
+  font-weight: 300;
+  font-family:'Courier New', Courier, monospace;
+
+
+}
+@media (min-width: 1280px) {
+  .left_logo_box,.slogan1,.slogan2 {
+    font-size: 52px; /* 当视口宽度超过900像素时，字体大小不再基于视口宽度 */
+  }
+  .hot_insc_box_left{
+    width: 108px;
+    font-size:  38px;
+  }
+  .hot_insc_box_center div{
+    font-size: 26px;
+  }
+  .market_list_tname{
+    font-size: 26px;
+  }
+  a {
+    text-align: center;
+    font-size: 60px;
+  }
+}
+
+
+
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+
+}

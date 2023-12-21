@@ -1,18 +1,34 @@
-//import { useState } from 'react'
+import { useState,useEffect } from 'react'
 import './App.css'
+import { btc_list, evm_eth_list } from './listdata';
+import axios from 'axios';
+
+ 
+
 
 function App() {
-  //const [count, setCount] = useState(0)
+ 
+  const [owners, setOwners] = useState(null)
+  const [floorPrice, setFloorPrice] = useState(null)
+ 
+  useEffect(() => {
+    axios.get('https://www.polsmarket.wtf/api-pols/markets/collections/details?category=token&collectionName=prc-20%20pols')
+      .then(response => {
+        try {
+          console.log(response.data);
+          if(response.data.code == 200 ){
+            setOwners(response.data.data.collections.owners);
+            setFloorPrice(response.data.data.collections.floorPrice);            
+          }
+        
+        } catch (error) {
+        }
+      }).catch(error => {
+       
+        console.error('There was an error!', error);
+      });
+  }, []);  
 
-  const market_data = [{
-    name: "POLS", link: "https://www.polsmarket.wtf/",
-  },
-  { name: "NEXTINSC", link: "https://www.nextinscription.xyz/", },
-  { name: "UNISAT", link: "https://hk.unisat.io/", },
-  { name: "FIRESAT", link: "https://firesat.io/", },
-  { name: "SOLS", link: "https://www.okx.com/cn/web3/marketplace/nft/collection/sol/sols-spl20", },
-  { name: "Sols", link: "https://www.polsmarket.wtf/", },
-  ];
   return (
 
     <div>
@@ -38,9 +54,9 @@ function App() {
 
               <div className='hot_insc_box_center'>
 
-                <div> <span>$Pols</span> <span className='holders'>地址数:76903</span> <span className='price'>当前价格: 2Matic</span> </div>
-                <div> <span>$Pols</span> <span className='holders'>地址数:76903</span> <span className='price'>当前价格: 2Matic</span> </div>
-                <div> <span>$Pols</span> <span className='holders'>地址数:76903</span> <span className='price'>当前价格: 2Matic</span> </div>
+                <div> <span>$Pols</span> <span className='holders'>地址数:{owners?owners:"--"}</span> <span className='price'>当前价格: {floorPrice?floorPrice:"--"} Matic</span> </div>
+                <div> <span>$Pols</span> <span className='holders'>地址数:{owners?owners:"--"}</span> <span className='price'>当前价格: {floorPrice?floorPrice:"--"} Matic</span> </div>
+                <div> <span>$Pols</span> <span className='holders'>地址数:{owners?owners:"--"}</span> <span className='price'>当前价格: {floorPrice?floorPrice:"--"} Matic</span> </div>
 
 
               </div>
@@ -53,17 +69,24 @@ function App() {
         <div className='market_list_box'>
 
           <div className='market_list_tname'  >
-            市场直达:
+            BTC市场直达:
           </div>
           <div className='market_list'  >
 
-            {market_data.map((item, index) => (
+            {btc_list.map((item, index) => (
               <div key={index} className="list-item">
-                <div className="list-item-box">
-                  <a href={item.link} target="_blank" rel="noopener noreferrer">
-                    {item.name}
+                <div className="list-item-box"
+                 onClick={() => window.open(item.link, "_blank")}
+                >
 
-                  </a>
+                  <div className="list-item-box-line1">
+                    <img src={item.icon}></img>
+
+                    <a href={item.link} target="_blank" rel="noopener noreferrer">
+                      {item.name}
+                    </a>
+                  </div>
+                  <p>{item.desc}</p>
                 </div>
 
               </div>
@@ -72,14 +95,41 @@ function App() {
           </div>
         </div>
 
+        <div className='market_list_box'>
 
+<div className='market_list_tname'  >
+  EVM市场直达:
+</div>
+<div className='market_list'  >
+
+  {evm_eth_list.map((item, index) => (
+    <div key={index} className="list-item">
+      <div className="list-item-box"
+       onClick={() => window.open(item.link, "_blank")}
+      >
+
+        <div className="list-item-box-line1">
+          <img src={item.icon}></img>
+
+          <a href={item.link} target="_blank" rel="noopener noreferrer">
+            {item.name}
+          </a>
+        </div>
+        <p>{item.desc}</p>
+      </div>
+
+    </div>
+  ))}
+
+</div>
+</div>
 
 
       </div>
 
 
       <div className='footer'>
-           ouyi.net 
+        ouyi.net
       </div>
 
     </div>

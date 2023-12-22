@@ -41,7 +41,7 @@
     },
     {
         name: "Rune", link: "https://runealpha.xyz/",
-        icon:"https://runealpha.xyz/apple-icon.png?02527fa9d63811ac",
+        icon:"/public/rune_icon.png",
         desc: "Rune 协议(COOK)符文市场"
     },
     {
@@ -65,15 +65,21 @@
     },
 
     {
-        name: "EthsMarket", link: "https://evm.ink/",
+        name: "EVM INK", link: "https://evm.ink/",
         icon:"https://evm.ink/favicon.png",
         desc: "evm 全链铭文市场"
     },
+    {
+        name: "IERC20", link: "https://www.ierc20.com/market",
+        icon:"https://www.ierc20.com/icons/favicon.png",
+        desc: "IERC20 | eth铭文市场"
+    },
+ 
 
     {
-        name: "BscsMarket", link: "https://bscs.market/",
-        icon:"https://bscs.market/favicon.jpg",
-        desc: "BscsMarket | bsc链铭文市场"
+        name: "NextInscription", link: "https://www.nextinscription.xyz",
+        icon:"https://www.nextinscription.xyz/nextinscription.ico",
+        desc: "NextInscription Poly链铭文市场"
     },
     {
         name: "PolsMarket", link: "https://www.polsmarket.wtf/",
@@ -94,10 +100,49 @@
         desc: "Fair20 Pad | arb铭文市场"
     },
   
+    
 
+];
+
+const other_list = [
+    
+    {
+        name: "Magic Eden", link: "https://magiceden.io",
+        icon:"/public/sol_me_icon.png",
+        desc: "SOL链 铭文市场"
+    },
+    {
+        name: "Dogex", link: "https://dogex.me/",
+        icon:"https://dogex.me/favicon.ico",
+        desc: "狗狗链 铭文市场 Dogim"
+    },
+    {
+        name: "Unielon", link: "https://unielon.com/",
+        icon:"https://unielon.com//unielon.svg",
+        desc: "Unielon | 狗狗铭文市场"
+    },
+    {
+        name: "Tonano", link: "https://tonano.io/",
+        icon:"https://tonano.io/favicon.ico",
+        desc: "Tonano | ton铭文市场"
+    },
+    {
+        name: "TRXI Market", link: "https://trximarkets.com/",
+        icon:"https://trximarkets.com/favico.ico",
+        desc: "trx铭文市场"
+    },
+    {
+        name: "BlueMove", link: "https://bluemove.net/",
+        icon:"https://bluemove.net//bluemove_favicon.ico",
+        desc: "BlueMove | Aptos铭文市场"
+    },
+    {
+        name: "COSS", link: "https://coss.ink/",
+        icon:"https://coss.ink/favicon.ico",
+        desc: "COSS Cosmos铭文市场"
+    },
 
 ];
 
 
-
-export { btc_list,evm_eth_list}; // 命名导出
+export { btc_list,evm_eth_list,other_list}; // 命名导出

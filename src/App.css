@@ -5,7 +5,6 @@
   text-align: center;
 }
 
-
 ._topbar {
   height: 0px;
   background-color: #e2eaf1;
@@ -20,9 +19,6 @@ FDE500
 F20004 */
 .top_box {
   display: flex;
-
-
-
 }
 
 .center_box {
@@ -40,16 +36,12 @@ F20004 */
 }
 
 @keyframes background-color-change1 {
-
   0%,
   100% {
     background-color: #f00;
-    /* 红色 */
   }
-
   50% {
     background-color: #0690D4;
-    /* 蓝色 */
   }
 }
 
@@ -63,16 +55,12 @@ F20004 */
 }
 
 @keyframes background-color-change {
-
   0%,
   100% {
     background-color: #000;
-    /* 红色 */
   }
-
   50% {
     background-color: #0000ff;
-    /* 蓝色 */
   }
 }
 
@@ -130,7 +118,6 @@ F20004 */
 }
 
 .market_list_tname {
-
   text-align: left;
   font-size: 2vw;
   background-color: red;
@@ -138,7 +125,6 @@ F20004 */
   margin-top: 6px;
   margin-bottom: 6px;
   padding-left: 10px;
-
 }
 
 .market_list {
@@ -178,7 +164,6 @@ F20004 */
 
 .list-item-box p {
   font-weight: 700;
-  
   height: 40px;
   margin-left: 10px;
   margin-right: 10px;
@@ -242,7 +227,33 @@ F20004 */
 
 }
 
-@media (max-width: 700px) {
+@media (max-width: 767px) {
+  .footer {
+    height: 80px;
+    text-align: right;
+    font-size: 50px;
+    padding-right: 20px;
+    font-weight: 300;
+  }
+  .list-item-box img {
+    margin: 4px;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+  }
+  .list-item-box a {
+    line-height: 35px;
+    font-size: 16px;
+
+  }
+  .list-item-box p {
+    height: 32px;
+    font-size: 14px;
+    margin-left: 10px;
+    margin-right: 10px;
+    line-height: 16px;
+    margin-top: 12px;
+  }
   .list-item {
     color: #000;
     flex: 0 0 50%;
@@ -250,8 +261,32 @@ F20004 */
     text-align: center;
     padding: 5px;
     box-sizing: border-box;
-
   }
+  .left_logo_box,
+  .slogan1,
+  .slogan2 {
+    font-size: 16px;
+  }
+  .left_logo_box{
+    padding: 15px 20px;
+    margin-right: 3px;
+  }
+  .hot_insc_box {
+    min-height: 120px;
+  }
+  .hot_insc_box_center div {
+    line-height: 40px;
+    margin-top: 5px;
+    margin-bottom: 3px;
+    height: 40px;
+  }
+  .market_list_tname {
+    font-size: 14px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    padding-left: 6px;
+  }
+  
 }
 
 @media (min-width: 1280px) {
@@ -260,7 +295,6 @@ F20004 */
   .slogan1,
   .slogan2 {
     font-size: 52px;
-    /* 当视口宽度超过900像素时，字体大小不再基于视口宽度 */
   }
 
   .hot_insc_box_left {

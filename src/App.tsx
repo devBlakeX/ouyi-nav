@@ -1,6 +1,6 @@
 import { useState,useEffect } from 'react'
 import './App.css'
-import { btc_list, evm_eth_list } from './listdata';
+import { btc_list, evm_eth_list,other_list } from './listdata';
 import axios from 'axios';
 
  
@@ -54,9 +54,9 @@ function App() {
 
               <div className='hot_insc_box_center'>
 
-                <div> <span>$Pols</span> <span className='holders'>地址数:{owners?owners:"--"}</span> <span className='price'>当前价格: {floorPrice?floorPrice:"--"} Matic</span> </div>
-                <div> <span>$Pols</span> <span className='holders'>地址数:{owners?owners:"--"}</span> <span className='price'>当前价格: {floorPrice?floorPrice:"--"} Matic</span> </div>
-                <div> <span>$Pols</span> <span className='holders'>地址数:{owners?owners:"--"}</span> <span className='price'>当前价格: {floorPrice?floorPrice:"--"} Matic</span> </div>
+                <div> <span>$POLS</span> <span className='holders'>地址数:{owners?owners:"--"}</span> <span className='price'>当前价格: {floorPrice?floorPrice:"--"} Matic</span> </div>
+                <div> <span>$POLS</span> <span className='holders'>地址数:{owners?owners:"--"}</span> <span className='price'>当前价格: {floorPrice?floorPrice:"--"} Matic</span> </div>
+                <div> <span>$POLS</span> <span className='holders'>地址数:{owners?owners:"--"}</span> <span className='price'>当前价格: {floorPrice?floorPrice:"--"} Matic</span> </div>
 
 
               </div>
@@ -103,6 +103,31 @@ function App() {
 <div className='market_list'  >
 
   {evm_eth_list.map((item, index) => (
+    <div key={index} className="list-item">
+      <div className="list-item-box"
+       onClick={() => window.open(item.link, "_blank")}
+      >
+
+        <div className="list-item-box-line1">
+          <img src={item.icon}></img>
+
+          <a href={item.link} target="_blank" rel="noopener noreferrer">
+            {item.name}
+          </a>
+        </div>
+        <p>{item.desc}</p>
+      </div>
+
+    </div>
+  ))}
+
+</div>
+<div className='market_list_tname'  >
+  其他热门链市场直达:
+</div>
+<div className='market_list'  >
+
+  {other_list.map((item, index) => (
     <div key={index} className="list-item">
       <div className="list-item-box"
        onClick={() => window.open(item.link, "_blank")}

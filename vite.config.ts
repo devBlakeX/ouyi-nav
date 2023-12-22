@@ -6,4 +6,7 @@ import ssr from 'vite-plugin-ssr/plugin'
 //ssr()
 export default defineConfig({
   plugins: [react() ],
+  server: {
+    host: true
+  }
 })

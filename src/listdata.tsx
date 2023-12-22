@@ -83,8 +83,8 @@
     },
     {
         name: "PolsMarket", link: "https://www.polsmarket.wtf/",
-        icon:"https://www.polsmarket.wtf/favicon.svg",
-        desc: "polygon链铭文市场"
+        icon:"/pols_icon.svg",
+        desc: "POLS铭文市场"
     },
 
 
@@ -95,7 +95,7 @@
     },
 
     {
-        name: "Fair20", link: "https://avascriptions.com/",
+        name: "Fair20", link: "https://www.fair20.io/",
         icon:"https://www.fair20.io/favicon.png",
         desc: "Fair20 Pad | arb铭文市场"
     },

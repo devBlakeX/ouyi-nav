@@ -41,7 +41,7 @@
     },
     {
         name: "Rune", link: "https://runealpha.xyz/",
-        icon:"/public/rune_icon.png",
+        icon:"/rune_icon.png",
         desc: "Rune 协议(COOK)符文市场"
     },
     {
@@ -108,7 +108,7 @@ const other_list = [
     
     {
         name: "Magic Eden", link: "https://magiceden.io",
-        icon:"/public/sol_me_icon.png",
+        icon:"/sol_me_icon.png",
         desc: "SOL链 铭文市场"
     },
     {
